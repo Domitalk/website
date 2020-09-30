@@ -7,16 +7,16 @@ const Navi = () => {
         <nav className="navbar">
             <ul>
                 <li>
-                    <Link to='#Home'>Dominic M. Chu</Link>
+                    <a href='#Home'>Dominic M. Chu</a>
                 </li>
                 <li>
-                    <Link to=''>About</Link>
+                    <a href='#About'>About</a>
                 </li>
                 <li>
-                    <Link to=''>Projects</Link>
+                    <a href='#Projects'>Projects</a>
                 </li>
                 <li>
-                    <Link to=''>Blogs</Link>
+                    <a href='#Blogs'>Blogs</a>
                 </li>
             </ul>
         </nav>

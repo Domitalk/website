@@ -5,7 +5,7 @@ import '../scss/Components/Home.scss';
 const Home = () => {
     return (
         <>
-            <img className="banner" src={bannerImageLarge} alt="banner" />
+            <img id="Home" className="banner" src={bannerImageLarge} alt="banner" />
         </>
     )
 }
