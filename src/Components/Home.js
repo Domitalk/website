@@ -8,6 +8,6 @@ const Home = () => {
             <img id="Home" className="banner" src={bannerImageLarge} alt="banner" />
         </>
     )
-}
+};
 
 export default Home;

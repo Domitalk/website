@@ -1,4 +1,5 @@
 import React from 'react';
+import '../scss/Components/CardButton.scss';
 
 const CardButton = (props) => {
     return (

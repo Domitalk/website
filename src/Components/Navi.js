@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import '../scss/Components/Navi.scss'
+import '../scss/Components/Navi.scss';
 
 const Navi = () => {
     return (
@@ -21,5 +20,5 @@ const Navi = () => {
             </ul>
         </nav>
     )   
-}
+};
 export default Navi;

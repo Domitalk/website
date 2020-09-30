@@ -1,5 +1,6 @@
 import React from 'react';
 import CardButton from './CardButton';
+import '../scss/Components/Card.scss';
 
 const Card = (props) => {
 
@@ -20,7 +21,7 @@ const Card = (props) => {
 
     return (
         <div>
-            <image src={props.project.imageUrl} />
+            <img src={props.project.imageUrl} />
             <h4>{props.project.header}</h4>
             <p>{props.project.description}</p>
             {createButtons()}

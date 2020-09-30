@@ -61,7 +61,7 @@ const blogData = [
     },
 ]
 
-export default blogData
+export default blogData;
 
 // {
 //     "imageUrl": "", 

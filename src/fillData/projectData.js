@@ -62,7 +62,7 @@ const projectData = [
     }
 ]
 
-export default projectData
+export default projectData;
 
 
 // {
