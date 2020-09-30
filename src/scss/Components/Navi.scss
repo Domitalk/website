@@ -9,17 +9,25 @@
     // padding: 2rem 4rem;
     z-index: 1;
     width: 100%;
+    // height: 5%;
     opacity: 0.9;
-    // margin-bottom: 3rem;
+    margin-bottom: 0.2rem;
 }
+// navbar spacing 
 .navbar ul {
     display: flex;
     list-style: none;
+    margin: 0 0.3rem;
+
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0rem;
+    padding-left: 0rem;
 }
 .navbar a {
     color: var(--nav-text-color);
-    padding: 0.45rem;
-    margin: 0 0.25rem;
+    padding: 0.5rem;
+    margin: 0 0.3rem;
     text-decoration: none;
 }
 .navbar a:hover {
