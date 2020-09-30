@@ -1,12 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../scss/Components/Navi.scss'
 
 const Navi = () => {
     return (
-        <nav className="navbar  bg-primary">
-            <h1>
-            NAVI
-            </h1>
+        <nav className="navbar">
             <ul>
                 <li>
                     <Link to='#Home'>Dominic M. Chu</Link>

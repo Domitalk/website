@@ -1,10 +1,11 @@
 import React from 'react';
 import bannerImageLarge from '../assets/images/banner.jpg'
+import '../scss/Components/Home.scss';
 
 const Home = () => {
     return (
         <>
-            <img src={bannerImageLarge} alt="banner" />
+            <img className="banner" src={bannerImageLarge} alt="banner" />
         </>
     )
 }
