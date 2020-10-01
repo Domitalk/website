@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Card from '../Components/Card';
+
 import '../scss/Containers/CardsContainer.scss';
 
 const CardsContainer = (props) => {
@@ -25,14 +26,14 @@ const CardsContainer = (props) => {
     return (
         <div className="CardsContainer" id={props.header}>
             <div>
-                <h2>{props.header}</h2>
+                <h1>{props.header}</h1>
             </div>
             <div className="cards-flex-box">
                 {mapInitialCards()}
                 {showMoreButton()}
             </div>
             <div className="cards-flex-box">
-                {mapMoreCards()}
+                {buttonToggle? mapMoreCards() : null}
             </div>
         </div>
     )

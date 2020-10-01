@@ -1,8 +1,24 @@
 import React from 'react';
 import '../scss/Components/About.scss';
+import '../App.scss'
+import CardButton from './CardButton';
 import profileImageLarge from '../assets/images/profile.jpg';
 
 import LogoIcon from './LogoIcon';
+
+import styled from 'styled-components'
+import { 
+    Github, 
+    Linkedin, 
+    Medium, 
+    Javascript, 
+    ReactLogo,
+    Ruby,
+    Rubyonrails,
+    Redux 
+} from '@styled-icons/simple-icons'
+import { Email } from '@styled-icons/material-sharp/Email'
+import { Java } from '@styled-icons/fa-brands/Java'
 
 
 const About = (props) => {
@@ -11,59 +27,74 @@ const About = (props) => {
     const resumePDF = "https://domitalk.s3.us-east-2.amazonaws.com/Dominic+Chu+Resume+Software+Engineer+PDF.pdf";
     const googleDOCS ="https://docs.google.com/document/d/1NIa5ZVRZTa2KpelYLzEQHIvu6CuaSntAFxr3RM3QhUk/edit?usp=sharing";
 
+    const GithubIcon = styled(Github)`
+        color: black
+    `
+    const LinkedinIcon = styled(Linkedin)`
+        color: black
+    `
+    const MediumIcon = styled(Medium)`
+        color: black
+    `
+    const EmailIcon = styled(Email)`
+        color: black
+    `
+
+
     return (
-        <div className="About">
-            <h2 className="section-title">
+        <div id="About" className="About">
+            <h1 className="section-title">
                 ABOUT
-            </h2>
-            <div className="Profile">
+            </h1>
+            <div className="Profile visual-card">
                 <h3>Dominic M. Chu</h3>
-                <img src={profileImageLarge} />
+                <img className="profile-pic" src={profileImageLarge} />
             </div>
-            <div className="Links">
+            <div className="Links visual-card">
                 <div>
                     <h2>Links</h2>
                 </div>
-                <div>
+                <div className="link-icon-container">
                     <a href="http://github.com/domitalk" target="_blank" rel="noopener noreferrer" >
-                        GitHubIcon
+                        <GithubIcon size="48" /> 
                     </a>
                     <a href="https://www.linkedin.com/in/dominic-m-chu" target="_blank" rel="noopener noreferrer">
-                        LinkedInIcon
+                        <LinkedinIcon size="48" /> 
                     </a> 
                     <a href="https://medium.com/@dominic.m.chu" target="_blank" rel="noopener noreferrer">
-                        MediumIcon
+                        <MediumIcon size="48" /> 
                     </a>
                     <a href="mailto:dominic.m.chu@gmail.com" target="_blank" rel="noopener noreferrer">
-                        EmailIcon
+                        <EmailIcon size="48" />
                     </a>
                 </div>
             </div>
-            <div className="Languages">
+            <div className="Languages visual-card">
                 <div>
                     <h2>Languages/Libraries</h2>
                 </div>
-                <div>
-                    <div>JavaScript</div>
-                    <div>ReactLogo</div>
-                    <div>Ruby</div>
-                    <div>Rubyonrails</div>
-                    <div>Redux</div>
-                    <div>Java</div>
+                <div className="icons-container">
+                    <Javascript className="icon" size="35" /> 
+                    <ReactLogo className="icon" size="35" /> 
+                    <Ruby className="icon" size="35" /> 
+                    <Rubyonrails className="icon" size="35" /> 
+                    <Redux className="icon" size="35" /> 
+                    <Java className="icon" size="35" />
                 </div>
             </div>
-            <div className="Resume">
+            <div className="Resume visual-card">
                 <div>
                     <h2>Resume</h2>
                 </div>
                 <div>
-                    <img src={resumeJPG}/>
+                    <img className="resume-picture" src={resumeJPG}/>
                 </div>
                 <div>
-                    <a href={resumeDOCX} target="_blank" rel="noopener noreferrer">
-                        <button >
-                             DOCX
-                        </button>
+                        <CardButton linkVar={resumeDOCX} desc={"DOCX"} />
+                        <CardButton linkVar={resumePDF} desc={"PDF"} />
+                        <CardButton linkVar={googleDOCS} desc={"Google Docs"} />
+
+                    {/* <a href={resumeDOCX} target="_blank" rel="noopener noreferrer">
                     </a>
                     <a href={resumePDF} target="_blank" rel="noopener noreferrer">
                         <button >
@@ -74,7 +105,7 @@ const About = (props) => {
                         <button >
                             Google Docs
                         </button>
-                    </a>
+                    </a> */}
                 </div>
             </div>
         </div>
