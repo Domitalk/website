@@ -3,6 +3,10 @@ import CardButton from './CardButton';
 import '../scss/Components/Card.scss';
 
 const Card = (props) => {
+    const { imageUrl } = props.project;
+    const style = {
+        backgroundImage: 'url(' + imageUrl + ')'
+    }
 
     const makeButton = (linkVar, desc) => {
         return <CardButton linkVar={linkVar} desc={desc} />
@@ -19,13 +23,29 @@ const Card = (props) => {
         )
     };
 
+
+
+    // <div>
+    // <img src={props.project.imageUrl} />
+    // <h4>{props.project.header}</h4>
+    // <p>{props.project.description}</p>
+    // {createButtons()}
+    // </div>
+
     return (
-        <div>
-            <img src={props.project.imageUrl} />
-            <h4>{props.project.header}</h4>
-            <p>{props.project.description}</p>
-            {createButtons()}
-        </div>
+        <article className="card">
+            <header style={style} id={imageUrl} className="card-header">
+                <h4 className="card-header--title">{props.project.header}</h4>
+            </header>
+            <div className="card-body">
+                <p className="body-content">
+                    {props.project.description}
+                </p>
+                <div className="card-buttons-container">
+                    {createButtons()}
+                </div>
+            </div>
+        </article>
     );
 };
 

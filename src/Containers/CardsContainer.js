@@ -27,11 +27,11 @@ const CardsContainer = (props) => {
             <div>
                 <h2>{props.header}</h2>
             </div>
-            <div>
+            <div className="cards-flex-box">
                 {mapInitialCards()}
                 {showMoreButton()}
             </div>
-            <div>
+            <div className="cards-flex-box">
                 {mapMoreCards()}
             </div>
         </div>

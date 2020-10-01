@@ -5,7 +5,7 @@ const Navi = () => {
     return (
         <nav className="navbar">
             <ul>
-                <li>
+                <li className="name-logo">
                     <a href='#Home'>Dominic M. Chu</a>
                 </li>
                 <li>

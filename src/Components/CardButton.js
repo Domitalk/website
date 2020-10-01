@@ -3,9 +3,9 @@ import '../scss/Components/CardButton.scss';
 
 const CardButton = (props) => {
     return (
-        <button href={props.linkVar} target="_blank" >
+        <a className="card-button" href={props.linkVar} target="_blank" >
             {props.desc}
-        </button>
+        </a>
     )
 };
 

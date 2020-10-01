@@ -13,11 +13,11 @@ const About = (props) => {
 
     return (
         <div className="About">
-            <p>
+            <h2 className="section-title">
                 ABOUT
-            </p>
+            </h2>
             <div className="Profile">
-                <h2>Dominic M. Chu</h2>
+                <h3>Dominic M. Chu</h3>
                 <img src={profileImageLarge} />
             </div>
             <div className="Links">

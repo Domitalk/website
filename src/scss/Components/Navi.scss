@@ -1,5 +1,5 @@
 :root {
-    --nav-text-color:Black;
+    --nav-text-color:rgb(39, 35, 35);
     --nav-a-hov-color:Blue;
 }
 .navbar {
@@ -7,13 +7,20 @@
     justify-content: flex-start;
     align-items: flex-start;
     // padding: 2rem 4rem;
-    z-index: 1;
+    // opacity: 0.9;
+    // margin-bottom: 0.2rem;
+    padding: 0.3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
     width: 100%;
-    // height: 5%;
-    opacity: 0.9;
-    margin-bottom: 0.2rem;
+    // this is the most important ** how much space the navbar takes up
+    height: 43px;
+    background-color: whitesmoke;
+    // overflow: hidden;
 }
-// navbar spacing 
+// navbar spacing between each li 
 .navbar ul {
     display: flex;
     list-style: none;
@@ -24,11 +31,24 @@
     padding-right: 0rem;
     padding-left: 0rem;
 }
+// .navbar li {
+//     margin: 0 0.5rem;
+
+// }
+// making links not blue and underline. 
+// padding margin for space between the letters in each link
 .navbar a {
     color: var(--nav-text-color);
     padding: 0.5rem;
-    margin: 0 0.3rem;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
     text-decoration: none;
+    text-shadow: 0.3px 0.3px rgb(185, 179, 179);
+}
+.name-logo a {
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 .navbar a:hover {
     color: var(--nav-a-hov-color);
