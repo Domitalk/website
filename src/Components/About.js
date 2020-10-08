@@ -15,7 +15,6 @@ import {
     ReactLogo,
     Ruby,
     Rubyonrails,
-    Redux 
 } from '@styled-icons/simple-icons'
 import { Email } from '@styled-icons/material-sharp/Email'
 import { Java } from '@styled-icons/fa-brands/Java'
@@ -46,44 +45,47 @@ const About = (props) => {
             <h1 className="section-title">
                 ABOUT
             </h1>
-            <div className="Profile visual-card">
-                <h3>Dominic M. Chu</h3>
-                <img className="profile-pic" src={profileImageLarge} />
-            </div>
-            <div className="Links visual-card">
-                <div>
-                    <h2>Links</h2>
+            <div className="profile-links-col">
+                <div className="Profile visual-card">
+                    <h3>Dominic M. Chu</h3>
+                    <img className="profile-pic" src={profileImageLarge} />
                 </div>
-                <div className="link-icon-container">
-                    <a href="http://github.com/domitalk" target="_blank" rel="noopener noreferrer" >
-                        <GithubIcon size="48" /> 
-                    </a>
-                    <a href="https://www.linkedin.com/in/dominic-m-chu" target="_blank" rel="noopener noreferrer">
-                        <LinkedinIcon size="48" /> 
-                    </a> 
-                    <a href="https://medium.com/@dominic.m.chu" target="_blank" rel="noopener noreferrer">
-                        <MediumIcon size="48" /> 
-                    </a>
-                    <a href="mailto:dominic.m.chu@gmail.com" target="_blank" rel="noopener noreferrer">
-                        <EmailIcon size="48" />
-                    </a>
-                </div>
-            </div>
-            <div className="Languages visual-card">
-                <div>
-                    <h2>Languages/Libraries</h2>
-                </div>
-                <div className="icons-container">
-                    <Javascript className="icon" size="35" /> 
-                    <ReactLogo className="icon" size="35" /> 
-                    <Ruby className="icon" size="35" /> 
-                    <Rubyonrails className="icon" size="35" /> 
-                    <Redux className="icon" size="35" /> 
-                    <Java className="icon" size="35" />
+                <div className="links-languages-combo-card">
+                    <div className="Links visual-card">
+                        <div>
+                            <h2>Links</h2>
+                        </div>
+                        <div className="link-icon-container">
+                            <a href="http://github.com/domitalk" target="_blank" rel="noopener noreferrer" >
+                                <GithubIcon size="48" /> 
+                            </a>
+                            <a href="https://www.linkedin.com/in/dominic-m-chu" target="_blank" rel="noopener noreferrer">
+                                <LinkedinIcon size="48" /> 
+                            </a> 
+                            <a href="https://medium.com/@dominic.m.chu" target="_blank" rel="noopener noreferrer">
+                                <MediumIcon size="48" /> 
+                            </a>
+                            <a href="mailto:dominic.m.chu@gmail.com" target="_blank" rel="noopener noreferrer">
+                                <EmailIcon size="48" />
+                            </a>
+                        </div>
+                    </div>
+                    <div className="Languages visual-card">
+                        <div>
+                            <h2>Languages/Libraries</h2>
+                        </div>
+                        <div className="icons-container">
+                            <Javascript className="icon" size="35" /> 
+                            <ReactLogo className="icon" size="35" /> 
+                            <Ruby className="icon" size="35" /> 
+                            <Rubyonrails className="icon" size="35" /> 
+                            <Java className="icon" size="35" />
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="Resume visual-card">
-                <div>
+                <div >
                     <h2>Resume</h2>
                 </div>
                 <div>

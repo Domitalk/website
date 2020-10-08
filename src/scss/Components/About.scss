@@ -37,3 +37,14 @@
     max-height: 90%;
 
 }
+
+.profile-links-col {
+    display: flex;
+    // flex-direction: row;
+    justify-content: center;
+}
+
+.links-languages-combo-card {
+    border-radius: 10px;
+    padding-right: 10%;
+}
